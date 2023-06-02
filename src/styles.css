@@ -5,6 +5,7 @@
   padding:0;
   font-family: 'Outfit', sans-serif;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 body {
@@ -81,8 +82,47 @@ body {
 .info--container {
   background-color:aliceblue;
   width: 60%;
-  height:80%;
+  height:95%;
   border-radius:20px;
   box-shadow: 0px 0px 10px -1px lightblue;
+  padding:10px 15px 5px 15px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 
 }
+
+.movie--title {
+  font-weight: 400;
+}
+
+.movie--plot {
+  text-align: center;
+}
+
+
+.movie--poster {
+  padding: 10px 0px 0px 0px;
+  border-radius: 15px;
+  width:50%;
+}
+
+.extra-content-holder {
+  margin-top: 10px;
+  width:90%;
+  height:30%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.extra-holder {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:33%;
+  width:35%;
+}
+

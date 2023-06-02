@@ -44,8 +44,15 @@ export default function App() {
 
           <InfoBox 
             title={apiData.Title}
+            plot={apiData.Plot}
             year={apiData.Year}
-            rating={apiData.rating}
+            released={apiData.Released}
+            poster={apiData.Poster}
+            languages={apiData.Language}
+            genres={apiData.Genre}
+            imdbRating={apiData.imdbRating}
+            rating={apiData.Rated}
+            runtime={apiData.Runtime}
           />
 
         </div>
