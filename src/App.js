@@ -31,7 +31,7 @@ export default function App() {
         <div className="input-modal-container">
           <h1 className="main--header">Movie Details Generator</h1>
           
-          <input className="api--input" type="text" onChange={handleInputVal}/>
+          <input className="api--input" type="text" onChange={handleInputVal} placeholder="Enter Movie or TV Show"/>
 
           <button className="submit--button" onClick={() => getMovieDetails(input)}>Search</button>
 
