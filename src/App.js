@@ -53,9 +53,12 @@ export default function App() {
             imdbRating={apiData.imdbRating}
             rating={apiData.Rated}
             runtime={apiData.Runtime}
+            actors={apiData.Actors}
+            boxoffice={apiData.BoxOffice}
           />
 
         </div>
+
       </div>
     </>
   );
