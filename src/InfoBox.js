@@ -8,50 +8,90 @@ function InfoBox(props) {
       
       <div className="main-movie-info">
 
-        <img className="movie--poster" src={props.poster}/>
+        {props.released !== undefined && <img className="movie--poster" src={props.poster}/>}      
 
       
         <div className="extra-content-holder">
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined && 
+            
+            <div className="extra-holder">
             <h3>Date Released:</h3>
             <p>{props.released}</p>
-          </div>
+            </div>
 
-          <div className="extra-holder">
+          }
+
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Languages:</h3>
             <p>{props.languages}</p>
-          </div>
+            </div>
+            
+          }
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Genres:</h3>
             <p className="movie--genres">{props.genres}</p>
-          </div>
+            </div>
+            
+          }
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Rating:</h3>
             <p>{props.rating}</p>
-          </div>
+            </div>
+            
+          }
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>IMDB Rating:</h3>
             <p>{props.imdbRating}/10</p>
-          </div>
+            </div>
+            
+          }    
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Runtime:</h3>
             <p>{props.runtime}</p>
-          </div>
+            </div>
+            
+          }   
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Actors:</h3>
             <p className="movie--actors">{props.actors}</p>
-          </div>
+            </div>
+            
+          } 
 
-          <div className="extra-holder">
+          {
+            props.released !== undefined &&
+
+            <div className="extra-holder">
             <h3>Box Office:</h3>
             <p className="movie--boxoffice">{props.boxoffice}</p>
           </div>
+            
+          }         
 
         </div>
       </div>
